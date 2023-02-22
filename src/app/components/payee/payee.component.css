@@ -1,0 +1,14 @@
+.full-width{
+    width: 100%;
+}
+.inputfield{
+    height: 30px;
+    width: 200px;
+}
+.example-card{
+    background-color: rgba(255, 255, 255, 0.377);
+      height: auto;
+      width:60vw ;
+      border-radius: 20px;
+      padding: 50px;
+  }

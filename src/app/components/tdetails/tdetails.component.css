@@ -1,0 +1,7 @@
+.example-card{
+    background-color: rgba(200, 188, 188, 0.377);
+      height: auto;
+      width:70vw ;
+      border-radius: 20px;
+      padding: 50px;
+  }

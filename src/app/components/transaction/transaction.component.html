@@ -1,0 +1,42 @@
+<div class="bootstrap-wrapper">
+    <div class="container text-center mt">
+        <div class="row">
+
+            <div class="col-md-8 offset-md-1 text-center">
+
+                <mat-card class="example-card">
+                    
+                    <h1 class="text-center">Transaction Details </h1>
+                    <form (ngSubmit)="doSubmit()">
+                        <!-- <small class="text-danger"></small> -->
+                        
+                        <mat-form-field class="full-width">
+                          <h3>AccountTo</h3>
+                          <input class="inputfield" name="accountTo" type="text" [(ngModel)]="data.accountTo" matInput>
+                        </mat-form-field>
+                        <mat-form-field class="full-width">
+                          <h3>AccountFrom</h3>
+                          <input class="inputfield" name="accountFrom" type="text" [(ngModel)]="data.accountFrom" matInput>
+                        </mat-form-field>
+                        <mat-form-field class="full-width">
+                          <h3>Amount</h3>
+                          <input class="inputfield" name="amount" type="text" [(ngModel)]="data.amount" matInput>
+                        </mat-form-field>
+                        <mat-form-field class="full-width">
+                          <h3>Date</h3>
+                          <input class="inputfield" name="date" type="text" [(ngModel)]="data.date" matInput>
+                        </mat-form-field>
+                        
+      
+      
+                        <div class="container text-center">
+      
+                            <button type="submit" mat-raised-button color="primary">Submit</button>
+                            <button style="margin-left: 10px" type="reset" mat-raised-button color="accent">Reset</button>
+                        </div>
+                    </form>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+</div>

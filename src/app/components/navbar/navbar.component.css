@@ -1,0 +1,21 @@
+.nav{
+    background-color:rgb(0, 0, 0);
+}
+.spacer{
+    position: relative;
+    
+    left: 930px;
+}
+.space{
+    position: relative;
+
+    left: 550px;
+}
+.gap{
+    position:relative;
+
+    
+}
+.icon{
+    color: white;
+}

@@ -1,0 +1,36 @@
+<mat-toolbar color="primary" class="nav">
+    
+    <span><a mat-icon-button routerLink="/"><mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home" class="icon"></mat-icon> &nbsp;Banking Service</a></span>
+    <span class="spacer">
+    
+        <button mat-button [matMenuTriggerFor]="menu">User</button>
+        <mat-menu #menu="matMenu">
+        <button mat-menu-item routerLink="/login" *ngIf="!isToken">User Login</button>
+        <button mat-menu-item (click)="logout()" *ngIf="isToken">Logout</button>
+        <button mat-menu-item routerLink="/register" *ngIf="!isToken">User Register</button>
+        <button *ngIf="isToken" mat-menu-item routerLink="/details">Customer details</button>
+        <button *ngIf="isToken" mat-menu-item routerLink="/balance">Details</button>
+        </mat-menu>
+    </span>
+    <span class="spacer" *ngIf="isToken">
+        <button mat-button [matMenuTriggerFor]="belowMenu">Direct Transaction</button>
+<mat-menu #belowMenu="matMenu" yPosition="below">
+  <button mat-menu-item routerLink="/transaction">Transaction</button>
+  <button mat-menu-item routerLink="/transactiondetails">Transaction Details</button>
+</mat-menu>
+    </span>
+    <span class="space" *ngIf="isToken">
+        <button mat-button [matMenuTriggerFor]="tpt">Third Paty Transfer</button>
+<mat-menu #tpt="matMenu" yPosition="below">
+  <button mat-menu-item routerLink="/payee">TPT</button>
+  <button mat-menu-item routerLink="/tptdetails">TPTransaction Details</button>
+</mat-menu>
+    </span>
+    <!-- <span class="gap">
+        <button mat-button [matMenuTriggerFor]="dt">Home</button>
+        <mat-menu #dt ="matMenu" yPosition="below">
+            <button mat-menu-item  routerLink="/">Home</button>
+        </mat-menu>
+    </span> -->
+
+</mat-toolbar>

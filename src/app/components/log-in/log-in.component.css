@@ -1,0 +1,37 @@
+.example-card {
+    
+    position: absolute;
+    left: -100px;
+    margin: 30px auto;
+    width: 100%;
+  }
+  .row{
+    position: relative;
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+  .full-width{
+    width: 100%;
+}
+.su
+{
+  float: right; 
+  size: 100px;
+}
+.inputfield{
+    height: 30px;
+    width: 100px;
+}  
+.next{
+  margin: 0px 50px;
+}
+.example-card{
+  background-color: rgba(255, 255, 255, 0.377);
+    height: auto;
+    width:60vw ;
+    border-radius: 20px;
+    padding: 50px;
+}

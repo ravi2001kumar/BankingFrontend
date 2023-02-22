@@ -1,0 +1,49 @@
+<div class="bootstrap-wrapper">
+    <div class="container text-center mt">
+        <div class="row">
+
+            <div class="col-md-8 offset-md-1 text-center">
+
+                <mat-card class="example-card">
+                    
+                    <h1 class="text-center">Customer Details here!</h1>
+
+              <form (ngSubmit)="doSubmit()">
+                  <!-- <small class="text-danger"></small> -->
+                  <mat-form-field class="full-width">
+                    <h3>userId</h3>
+                    <input class="inputfield" name="userId" type="number" [(ngModel)]="data.userId" matInput>
+                  </mat-form-field>
+                  <mat-form-field class="full-width">
+                    <h3>Account Number</h3>
+                    <input class="inputfield" name="accountnumber" type="text" [(ngModel)]="data.accountnumber" matInput>
+                  </mat-form-field>
+                  <mat-form-field class="full-width">
+                    <h3>IfscCode</h3>
+                    <input class="inputfield" name="ifscCode" type="text" [(ngModel)]="data.ifscCode" matInput>
+                  </mat-form-field>
+                  <mat-form-field class="full-width">
+                    <h3>Balance</h3>
+                    <input class="inputfield" name="balance" type="text" [(ngModel)]="data.balance" matInput>
+                  </mat-form-field>
+                  <mat-form-field class="full-width">
+                    <h3>Branch</h3>
+                    <input class="inputfield" name="branch" [(ngModel)]="data.branch" matInput>
+                  </mat-form-field>
+                  
+
+
+                  <div class="container text-center">
+
+                      <button type="submit" mat-raised-button color="primary">Submit</button>
+                      <button style="margin-left: 10px" type="reset" mat-raised-button color="accent">Reset</button>
+                  </div>
+              </form>
+                </mat-card>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+

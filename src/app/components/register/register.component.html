@@ -1,0 +1,74 @@
+<div class="bootstrap-wrapper">
+    <div class="container text-center mt">
+        <div class="row">
+
+            <div class="col-md-8 offset-md-1 text-center">
+
+                <mat-card class="example-card">
+                    
+                    <h1 class="text-center">User Register here!</h1>
+
+              <form (ngSubmit)="doSubmit()">
+                  <!-- <small class="text-danger"></small> -->
+                  <mat-form-field class="full-width">
+                      <h3>Username</h3>
+                      <input class="inputfield" 
+                      name="username"
+                      required
+                      type="text" 
+                      [(ngModel)]="data.username"
+                      matInput />
+                  </mat-form-field>
+
+                  <mat-form-field class="full-width">
+                      <h3>Password</h3>
+                      <input class="inputfield" 
+                      name="password"
+                      required
+                      type="password" 
+                      [(ngModel)]="data.password"
+                      matInput />
+                  </mat-form-field>
+                  <mat-form-field class="full-width">
+                    <h3>Name</h3>
+                    <input class="inputfield" name="cname" type="text" [(ngModel)]="data.name" matInput>
+                  </mat-form-field>
+                  <mat-form-field class="full-width">
+                    <h3>Contact Number</h3>
+                    <input class="inputfield" name="number" type="text" [(ngModel)]="data.contactNo" matInput>
+                  </mat-form-field>
+                  <mat-form-field class="full-width">
+                    <h3>Date-Of-Birth</h3>
+                    <input class="inputfield" name="dob" type="text" [(ngModel)]="data.dob" matInput>
+                  </mat-form-field>
+                  <mat-form-field class="full-width">
+                    <h3>Email</h3>
+                    <input class="inputfield" name="email" [(ngModel)]="data.email" matInput>
+                  </mat-form-field>
+                  <mat-form-field class="full-width">
+                    <h3>Age</h3>
+                    <input class="inputfield" name="age" type="text" [(ngModel)]="data.age" matInput>
+                  </mat-form-field>
+                  
+                  <mat-form-field class="full-width">
+                    <h3>Pin</h3>
+                    <input class="inputfield" name="pin" [(ngModel)]="data.pin" matInput>
+                  </mat-form-field>
+
+
+                  <div class="container text-center">
+
+                      <button type="submit" mat-raised-button color="primary">Register</button>
+                      <button style="margin-left: 10px" type="reset" mat-raised-button color="accent">Reset</button>
+                  </div>
+              </form>
+              <br/>
+              <h3>Already have an account?</h3>
+              <button mat-raised-button style="margin-left: 10px;"routerLink="/login" color="warn">Login</button>
+                </mat-card>
+
+            </div>
+
+        </div>
+    </div>
+</div>
