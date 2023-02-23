@@ -31,6 +31,7 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import {FormControl} from '@angular/forms';
 import { FooterComponent } from './components/footer/footer.component';
 import { CBalanceComponent } from './components/cbalance/cbalance.component';
+import { PayeedetailsComponent } from './components/payeedetails/payeedetails.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { CBalanceComponent } from './components/cbalance/cbalance.component';
     PDetailsComponent,
     FooterComponent,
     CBalanceComponent,
+    PayeedetailsComponent,
 
   ],
   imports: [

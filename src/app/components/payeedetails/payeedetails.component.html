@@ -1,0 +1,34 @@
+<div class="bootstrap-wrapper">
+    <div class="container text-center mt">
+        <div class="row">
+
+            <div class="col-md-8 offset-md-1 text-center">
+
+                <mat-card class="example-card">
+                    
+                    <button mat-raised-button color="warn" (click)="show()">Get Payee Details</button><br/>
+                    <h1 class="text-center">Payee Details </h1>
+                    <mat-accordion>
+                    <mat-expansion-panel *ngFor="let item of data">
+                        <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Id:{{item.id}}
+                        </mat-panel-title>
+                        <mat-panel-description>
+                            Date:{{item.date}}
+                        </mat-panel-description>
+                        </mat-expansion-panel-header>
+                        <!-- <p>From:{{item.accountFrom}}</p> -->
+                        <p>Account number:{{item.accountTo}}</p>
+                        <!-- <p>Amount:{{item.amount}}</p> -->
+                        <p>Account Holder Name:{{item.accHolderName}}</p>
+                        <p>BankName:{{item.bankName}}</p>
+                        <p>IfscCode:{{item.ifscCode}}</p>
+                    </mat-expansion-panel>
+                    </mat-accordion>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+</div>
+

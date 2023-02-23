@@ -5,15 +5,19 @@
             <div class="col-md-8 offset-md-2 text-center">
 
                 <mat-card class="example-card">
-                    
+                  
                     <h1 class="text-center">Third Party Transfer Details </h1>
-                    <form (ngSubmit)="doSubmit()">
+                    <form (ngSubmit)="getDetails()">
                         <!-- <small class="text-danger"></small> -->
                         
                         <mat-form-field class="full-width">
                           <h3>AccountTo</h3>
-                          <input class="inputfield" name="accountTo" type="text" [(ngModel)]="data.accountTo" matInput>
+                          <input class="inputfield" name="accountTo" type="text" [(ngModel)]="data.accountTo" matInput >
                         </mat-form-field>
+                        <button type="submit" mat-raised-button color="primary">Get Details</button>
+                        </form>
+                        <br/>
+                        <form (ngSubmit)="doSubmit()">
                         <mat-form-field class="full-width">
                           <h3>AccountFrom</h3>
                           <input class="inputfield" name="accountFrom" type="text" [(ngModel)]="data.accountFrom" matInput>

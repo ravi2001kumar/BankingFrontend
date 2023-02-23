@@ -11,6 +11,7 @@ import { CDetailsComponent } from './components/cdetails/cdetails.component';
 import { TDetailsComponent } from './components/tdetails/tdetails.component';
 import { PDetailsComponent } from './components/pdetails/pdetails.component';
 import { CBalanceComponent } from './components/cbalance/cbalance.component';
+import { PayeedetailsComponent } from './components/payeedetails/payeedetails.component';
 
 
 const routes: Routes = [
@@ -58,6 +59,11 @@ const routes: Routes = [
   {
     path:'balance',
     component:CBalanceComponent,
+    pathMatch:'full'
+  },
+  {
+    path:'payeedetails',
+    component:PayeedetailsComponent,
     pathMatch:'full'
   }
 
